@@ -12,7 +12,10 @@
     background-color: white;
     padding-top: 2%;
     padding-bottom: 2%;
-
+}
+#tituloS1{
+    font-size: 350%;
+    color: #B81476;
 }
 
 </style>
@@ -36,30 +39,30 @@
         </div>
              <!-- Primeiro quadrante -->
     <style>
-.quad1{
+.container{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2%;
+    gap:2%;
     background-color: rgb(255, 255, 255);
     padding-top: 1%;
     padding-left: 5%;
     padding-right: 5%;
-    height: 1000px;
+    height: 900px;
 }
-.imagemE{
+.box1{
     width:900px;
     height:900px;
     background-color: #ffffff;
     border-radius: 50px;
 }
-.imagemE img{
+.box1 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50px;
 }
-.imagensM{
+.box2{
     display: flex;
     flex-direction: column;
     width:900px;
@@ -67,52 +70,72 @@
     background-color: #EB95C9;
     border-radius: 50px;
 }
-.imagensM #imagemGrande img{
+.box2 #imagemGrande img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50px;
 }
-.imagensM #imagensPequenas{
+.box2 #imagensPequenas{
     display: flex;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50px;
-}
-.imagensD{
-    display: flex;
-    flex-direction: column;
-    width:900px;
-    height:900px;
-    background-color: #EB95C9;
-    border-radius: 50px;
-}
-#imagensDD {
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 300px;
+    /* object-fit: cover; */
+    border-radius: 50px;
+}
+.box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width:900px;
+    height:900px;
+    background-color: #EB95C9;
+    border-radius: 50px;
+}
+#imagensD {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+#imagensD img {
+    width:max-content;
+    height: 100%;
+    border-radius: 10px;
+    flex: 1;
+    margin: 10px;
+    
+    
 }
     </style>
-        <div class="quad1">
-           <div class="imagemE">
-                <img src="imagens/vertical-closeup-shot-beautiful-pink-orchids.png" alt="">
+        <div class="container">
+           <div class="box1">
+                <img src="imagens/vertical-closeup-shot-beautiful-pink-orchids.png">
            </div>
 
-           <div class="imagensM">
+           
+           <div class="box2">
                 <div id="imagemGrande">
-                    <img src="imagens/DALL·E 2024-09-05 17.24.12 - A realistic orchid greenhouse featuring only the species Epidendrum denticulatum. The greenhouse is filled with these delicate orchids, their long, sl 1.png" alt="">
+                    <img src="imagens/DALL·E 2024-09-05 17.24.12 - A realistic orchid greenhouse featuring only the species Epidendrum denticulatum. The greenhouse is filled with these delicate orchids, their long, sl 1.png">
                 </div>
+
                 <div id="imagensPequenas">
-                    <img src="imagens/woman-decorating-her-house-with-orchids (1).png" alt="">
-                    <img src="imagens/image 2.png" alt="">
+                    <img src="imagens/woman-decorating-her-house-with-orchids (1).png">
+                    <img src="imagens/image 2.png">
                 </div>
            </div>
 
-           <div class="imagensD">
-                <div id="imagensDD">
-                    <img src="imagens/image 11.png" alt="">
-                    <img src="imagens/cc609-secoes66-01.png" alt="">
+
+           <div class="box3">
+                <div id="imagensD">
+                    <img src="imagens/image 11.png">
+                    <img src="imagens/cc609-secoes66-01.png">
                 </div>
                 
            </div>
@@ -130,7 +153,6 @@
     padding-left: 5%;
     padding-right: 5%;
     height: 600px;
-    
 }
 #div_img{
     background-color: #EB95C9;
@@ -197,47 +219,66 @@
     background-color: #EB95C9;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    height: 500px;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    padding: 10%;
+    padding-top: 5%;
 }
-#tituloS1{
-    font-size: 350%;
-    color: #B81476;
-}
-#caixa{
-    text-align: center;
-    width: 50%;
-}
-.caixa .h3{
-    background-color: red;
-}
-</style>     <!-- Terceiro quadrante -->
-        <div id="quad3">
-            <div id="caixa">
-                <h3>Redução dos custos</h3>
-                <span>Nosso sistema fornce dados relevantes para o uso e controle  do gás etileno e 
-                    incidência luminosa, reduzindo os riscos de perdas.
-                </span>
-            </div>
-            <div id="caixa">
-                    <h3>Aumento do Lucro</h3>
-                    <span>Disponibiliza informações relevantes de como potencializar sua produção com o 
-                        uso do gás etileno e a quantidade ideal de luminosidade.
-                    </span>
-            </div>
-            <div id="caixa">
-                <h3>Aumento da Produtividade</h3>
-                <span>Com a potencialização do desenvolvimento, a produtividade sobe como consequência.
-                </span>
-            </div>
-            <div id="caixa">
-                <h3>Redução do Tempo de Cultivo</h3>
-                <span>Alerta sobre condições ideais que aceleram o desenvolvimento.
-                </span>
-            </div>
 
+#caixa{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    width: 45%;
+    height: 50%;
+    border-radius: 50px;
+    background-color: bisque;
+    padding: 20px;
+}
+
+#caixa h3{
+    align-items: center;
+    background-color: aquamarine;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 200px;
+}
+
+</style>     
+            <!-- Terceiro quadrante -->
+        <div id="quad3">
+                <div id="caixa">
+                    <h3>Redução dos custos</h3>
+                    <span>Nosso sistema fornce dados relevantes para o uso e controle  do gás etileno e 
+                        incidência luminosa, reduzindo os riscos de perdas.
+                    </span>
+                </div>
+                    <div id="caixa">
+                            <h3>Aumento do Lucro</h3>
+                            <span>Disponibiliza informações relevantes de como potencializar sua produção com o 
+                                uso do gás etileno e a quantidade ideal de luminosidade.
+                            </span>
+                    </div>
+                        <div id="caixa">
+                            <h3>Aumento da Produtividade</h3>
+                            <span>Com a potencialização do desenvolvimento, a produtividade sobe como consequência.
+                            </span>
+                        </div>
+                            <div id="caixa">
+                                <h3>Redução do Tempo de Cultivo</h3>
+                                <span>Alerta sobre condições ideais que aceleram o desenvolvimento.
+                                </span>
+                            </div>
         </div>
+
+
+
+
+
+
 
         <footer>
             <div id="footerMenu">
